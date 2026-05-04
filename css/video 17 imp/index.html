@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors in CSS</title>
+    <style>                             /* internal css is used for convienience */
+    /* div{
+        background-color: red;
+    } */
+     /* class selector */
+     .red{                              /* "." is used to target class */
+        background-color: red;
+     }
+     /* id selector */
+     #green{
+        background-color: green;     /*  "#" is used to targer id */
+     }
+     /* child selector */
+     div > p{
+        background-color: yellow;    /* this is a child class,it should be direct child */
+     }
+    /*  dicendent selector */
+     div p{
+        background-color: blue;
+     }
+     /* universal selector */
+     * {
+        margin: 0;
+        padding: 0;
+     }
+
+     /* #psuedo selector */
+     a:visited{              /* it will make the link yellow once visited */
+        color: yellow;
+     }
+
+     a:link{
+        color: green;     /*  make link green when not visited */
+     }
+
+     a:active{
+        background-color: red;     /* background color when clicked */
+     }
+
+     a:hover{
+        background-color: blue;     /* color when hovered */
+     }
+
+     p:first-child{
+        background-color: aqua;
+     }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>this is one</p>
+        <p>this is second</p>
+    </main> 
+
+    <div class="red">
+        this is a div
+        <p>this is a para and it is a direct child of this div</p>
+        <article>
+            <p>this is not a direct child and can be targeted by dicendent selector</p>
+        </article>
+    </div>
+    <div id="green">
+        this is another div
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+
+    
+</body>
+</html>

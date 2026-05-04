@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            position: sticky;
+            top: 0;        /* this is necessary for sticky */
+        }
+
+        nav{
+            height: 50px;
+            background-color: peachpuff;
+        }
+
+        main{
+            background-color: black;
+            padding: 20px;
+        }
+
+        .boxes{
+            background-color: green;
+            height: 70vh;
+            width: 90vw;
+            margin: 10px auto;
+            padding: 30px 30px;
+            text-align: center;
+        }
+
+        .box1{
+            height: 50vh;
+            width: 40vw;
+            background-color: blue;
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .box2{
+            height: 50vh;
+            width: 40vw;
+            background-color: rgb(189, 37, 181);
+            display: inline-block;
+        }
+
+        .container{
+            color: white;
+            text-align: center;
+            padding: 40px 30px;
+            margin:  50px;
+            border: 3px solid;
+            border-radius: 30px;
+        }
+
+        .orangebox{
+            position: fixed;
+            background-color: orange;
+            height: 40px;
+            width: 40px;
+            border-radius: 60px;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        footer{
+            height: 50px;
+            background-color: bisque;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <div class="boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="container">
+            <p>Welcome to Sigma Web development express</p>
+        </div>
+        <div class="orangebox">
+    
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

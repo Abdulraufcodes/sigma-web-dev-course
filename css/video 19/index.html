@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <style>
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* use codepen website to see all fonts */
+            font-style: italic;     /* poppins is also a great font */
+            font-weight: 500;
+            text-decoration: underline;
+            font-size: 24px;
+            line-height: 1.8;
+            letter-spacing: 2px;
+
+        }
+
+        h2{
+            text-align: center;      /* this will center the text */
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 4px; /* thickness of wavy line */
+            text-indent: 40px;   /* gives space on the left hand side */
+            
+        }
+
+        .para2{
+            border: 3px solid red;
+            width: 150px;
+            text-overflow:clip;   /* this will work when line ends and will clip or continue the word in next line.YOU also need to write overflow hidden*/
+            overflow:hidden;
+            word-break:break-all;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>this is a video on fonts</p>
+        <p>this is another para</p>
+        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat praesentium natus quisquam officia eaque ea, ab iusto dicta tenetur? Incidunt earum fuga saepe veritatis nobis error! Perferendis dolorem recusandae, hic corrupti totam consectetur voluptate nesciunt maiores dolore culpa enim officia eaque ipsum doloremque delectus!</p>
+    </div>
+</body>
+
+</html>

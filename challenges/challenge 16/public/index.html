@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee detail</title>
+</head>
+<body>
+    <!-- making button -->
+    <button id="generatebtn">Generate data</button>
+
+    <script>
+        document.getElementById('generatebtn').addEventListener('click', async () => {
+            let res = await fetch('/generate');//fetching our server
+            let text = await res.text();
+            alert(text);
+        })
+    </script>
+</body>
+</html>

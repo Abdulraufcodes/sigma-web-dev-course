@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  gap: 34px;
+  background: black;
+  color: white;
+  list-style: none;
+  padding: 20px;
+}
+a li {
+  color: white;
+}
+
+.red {
+  background-color: red;
+}

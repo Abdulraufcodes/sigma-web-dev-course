@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            align-items: center; /* vertically center */
+            /* justify-content: center; */ /* horizontally center */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            align-content: center;  /* used to center multiple line of items */
+            flex-flow: row wrap;  /* used to set two properties */
+            /* gap: 30px;
+            row-gap: 30px;
+            column-gap: 40px;
+            gap: 20px 50px; */
+
+
+            
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background-color: blueviolet;
+            margin: 2px;
+            flex-grow: 1;
+
+        }
+
+        .item3{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+
+        .item4{
+            align-self: flex-start; /* apply when align item and content is not there */
+        }
+
+        .order-1{
+            order: 1;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item order-1">1</div>
+        <div class="item">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+       
+    </div>
+</body>
+</html>

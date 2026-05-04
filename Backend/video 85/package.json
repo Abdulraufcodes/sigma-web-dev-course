@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "slugify": "^1.6.6"
+  },
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "this is the spotify clone that will replace the origional page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "play",
+    "music"
+  ],
+  "author": "",
+  "license": "ISC"
+}

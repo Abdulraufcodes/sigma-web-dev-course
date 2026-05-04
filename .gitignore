@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# environment variables
+.env
+
+# build output
+dist/
+build/
+
+# editor
+.vscode/
+
+*.exe
+*.mp4
+node_modules/

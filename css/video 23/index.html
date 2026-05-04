@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display properties</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: 2px solid black;
+           /*  display: inline; */   /* this will make the div inline element */
+            display: inline-block;  /* this will allow the below settings to be applied */
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+        }
+
+        .box1{
+            /* display: none;  it will remove the element */
+              visibility: hidden;    /* hide the element */
+        }
+    </style>
+</head>
+<body>
+   <!--  website for more info: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a good box</div>
+    <span>I am a good </span>
+    <span>box</span>
+</body>
+</html>

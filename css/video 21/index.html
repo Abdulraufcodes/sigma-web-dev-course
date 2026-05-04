@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* specificity of it is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* specificity of it is 10 */
+        .cyellow {
+            color: yellow;
+        }
+
+        /* specificity of it is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* specificity of it is 10 */
+        .cpurple {
+            color: purple;
+        }
+        /* specificity of it is 1+10 */
+        h1.cyellow {
+            color: chartreuse;
+        }
+
+        /* specificity of it is 10 */
+        [data-x=a]{
+        /* this is attribute selector */
+        background-color:rgb(255, 255, 255) ;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="cyellow cred cpurple" data-x="a">This is a class on selector</h1>
+        <p>Order of priority : inline style > ID selector > Class or Attribute selector > Element selector > Universal
+            selector
+</body>
+
+</html>

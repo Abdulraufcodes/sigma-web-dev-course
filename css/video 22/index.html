@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    .box {
+        box-sizing: border-box;
+        border: 5px solid red;
+        /*  width: 1536px; */
+        /* this is the width of the screen */
+        width: 80vw;
+        /* this will cover the entire screne */
+        height: 10vh;
+        margin: auto;
+        /* this will center the div and other inline elemets only */
+        background-color: aqua;
+
+    }
+
+    .container {
+        margin: 23px auto;  /* fist is top-bottom and second is left-right */
+        box-sizing: border-box;
+        border: 2px solid blue;
+        width: 80vw;
+        height: 80vh;
+        font-size: 18px;
+        background-color:aqua;
+    }
+
+    .container p {
+        font-size: 2em;/*  this will double the font size of above inherited size */
+        font-size: 2rem; /* this will double the root element size i.e,html */
+        width: 50%;  /* 50% of the parent class */
+        border: 2px solid red;
+        
+    }
+
+    .mycont{
+        border: 2px solid black;
+        color: red;
+        background-color: rgb(241, 238, 244);
+        margin: 23px auto;
+        box-sizing: border-box;
+        width: 80vw;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ea temporibus dolorum inventore eius in facere
+            dolor recusandae doloremque voluptatum. Dolorem, quam porro.</p>
+    </div>
+
+    <div class="mycont">
+        this is a container
+    </div>
+</body>
+
+</html>

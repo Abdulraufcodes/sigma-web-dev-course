@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Modal in CSS</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1{
+            color: yellow;
+            padding: 5px;
+            margin: 10px;
+            border: 5px solid red;
+            height: 200px;              /* this is the height of the content */
+            box-sizing: border-box;    /*  this will make the total height of the elememt 200 includint padding,border and margin */
+        }
+
+        .box2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>

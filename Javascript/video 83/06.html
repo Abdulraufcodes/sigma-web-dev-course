@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06</title>
+</head>
+<body>
+    <script>
+        function countvow(word) {
+            let count = 0;
+            for(const element of word) {
+                if(vowels.includes(element)) {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+
+        let word = 'Raauf';
+        let vowels = ['a','e','i','o','u','A','E','I','O','U',];
+        let total = countvow(word);
+        console.log(total);
+    </script>
+</body>
+</html>

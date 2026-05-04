@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function placeOrder() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log("placing order...")
+                    
+                },2000);
+            });
+        };
+        async function confirmation(placeOrder) {
+            return new Promise(() => {
+                setTimeout(() => {
+                    resolve(placeOrder);
+                    console.log("Order confirmed")
+                }, (1+Math.random()*4)*1000);
+            })
+        }
+    </script>
+</body>
+</html>

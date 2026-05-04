@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 50vh;
+            background-color: rgb(4, 68, 4);
+
+        }
+
+        .box{
+            width: 10vw;
+            height: 10vh;
+            background-color: aquamarine;
+            /* animation-name: ABanime;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.43, -0.02, 0, 0.95);
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; 
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ABanime 2s cubic-bezier(0.43, -0.02, 0, 0.95)  1s infinite alternate-reverse ;
+        }
+
+        @keyframes ABanime {
+            form{
+                
+            }
+            to{
+                background-color: lawngreen;
+                transform: translateX(40vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
